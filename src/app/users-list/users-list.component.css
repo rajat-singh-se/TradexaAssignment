@@ -1,0 +1,56 @@
+.usersList{display: inline-block;
+    
+    top:0px;
+    width: 60%;
+    padding: 20px;
+    background-color: rgb(194, 193, 193);
+    border-left: 2px solid black;
+}
+.text{
+    margin-top: 10px;
+    font-size: 20px;
+    
+}
+
+table,td,th{
+    border: 1px solid black;
+}
+table {
+    
+    border-collapse: collapse;
+  }
+
+  tr:hover{
+      background-color: aliceblue;
+      cursor: pointer;
+  }
+ 
+  th{
+      background-color: gray;
+       padding: 5px;
+      height:30px;
+  }
+
+  td{
+    padding: 5px;
+  }
+
+  .small{
+      width:80px;
+  }
+  
+  .mid{
+      width:140px;
+  }
+
+  .larg{
+     width:200px;
+  }
+
+.text{
+    margin-bottom: 20px;
+}
+  p{
+      display: inline-block;
+      font-weight: bold;
+  }

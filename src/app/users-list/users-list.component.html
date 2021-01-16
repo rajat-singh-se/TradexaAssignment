@@ -1,0 +1,32 @@
+<div class="usersList">
+
+    <div class="text">
+        <label for="text">Input Text:</label> <p id="textData">{{text}}</p>
+    </div>
+
+    <div class="tabel">
+        <table>
+            <thead>
+            <tr>
+                <th class="small">#ID</th>
+                <th class="mid">Name</th>
+                <th class="mid">User Name</th>
+                <th class="larg">Email</th>
+                <th class="larg">Phone</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let user of userlist">
+            <tr *ngIf="user.name.toLowerCase().startsWith(text.toLowerCase())" (click)="selectData(user.name)">
+               
+                    <th class="small">{{user.id}}</th>
+                    <td class="mid">{{user.name}}</td>
+                    <td class="mid">{{user.username}}</td>
+                    <td class="larg">{{user.email}}</td>
+                    <td class="larg">{{user.phone}}</td>
+                
+            </tr>
+        </tbody>
+           
+        </table>
+    </div>
+</div>
